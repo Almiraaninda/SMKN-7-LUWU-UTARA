@@ -1,0 +1,156 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar-brand span {
+  font-size: 26px;   /* bisa diganti sesuai kebutuhan */
+  color: #fff;       /* biar kontras */
+}
+
+.navbar-nav .nav-link {
+  margin-left: 15px; /* kasih jarak antar menu */
+  font-weight: 500;
+}
+
+/* Hero Section */
+.hero-section {
+      position: relative;
+      height: 80vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: black;
+      color: white;
+      overflow: hidden;
+    }
+    .hero-content {
+      color: #ffffff;
+    }
+/* Buttons */
+.btn-selengkapnya {
+  background-color: #13f138;
+  color: #4c9b45;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-selengkapnya:hover {
+  background-color: #0aa71f;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+  user-select: none;
+  cursor: pointer;
+}
+
+/* Warna tombol */
+.red { background: #e60000; }
+.green { background: #5c8a36; }
+.orange { background: #ff9933; }
+.blue { background: #0066cc; }
+.purple { background: #9933cc; }
+.lightgreen { 
+  background: #99cc66; 
+  color: white; 
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+.lightgreen span {
+  display: block;
+  font-size: 14px;
+  color: #003366;
+}
+
+/* Hover efek */
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Klik efek */
+.btn:active {
+  transform: scale(0.95);
+  box-shadow: inset 0 4px 8px rgba(0,0,0,0.4);
+}
+
+
+.btn-daftar {
+  background-color: #ffc107;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+.btn-daftar:hover {
+  background-color: #e0a800;
+  color: #fff;
+}
+
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 0 1rem;
+    }
+
+.info-box {
+  min-height: 200px;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Tombol WhatsApp */
+.btn-wa {
+  background-color: #25D366;
+  color: white;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 10px 20px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn-wa:hover {
+  background-color: #20b955;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-wa i {
+  font-size: 1.3rem;
+  margin-right: 8px;
+}

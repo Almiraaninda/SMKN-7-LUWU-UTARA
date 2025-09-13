@@ -1,0 +1,1 @@
+# Website SMKN 7 Luwu Utara. Desain Awal dibuat di Figma kemudian dikembangkan menggunakan Visual Studio Code dengan HTML, CSS, dan JavaScript.

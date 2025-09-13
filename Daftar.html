@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendaftaran Peserta Didik Baru</title>
+    <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+  
+</head>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.navbar-brand span {
+  font-size: 26px;   /* bisa diganti sesuai kebutuhan */
+  color: #fff;       /* biar kontras */
+}
+
+.navbar-nav .nav-link {
+  margin-left: 15px; /* kasih jarak antar menu */
+  font-weight: 500;
+}
+
+.form-container {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.step-indicator {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
+  background: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+h2 {
+  color: #003366;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.subtitle {
+  color: #777;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.requirements h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.requirements ol {
+  text-align: left;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn {
+  background: #e6e6e6;
+  border: 1px solid #bbb;
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #d9d9d9;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+</style>
+<body>
+
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand d-flex align-items-center" href="#">
+    <img src="img/logosmkn7.svg" alt="Logo SMKN 7 LUWU UTARA" 
+         style="height: 40px; width: auto; margin-right: 10px;">
+    <span class="font-weight-bold">SMKN 7 LUWU UTARA</span>
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link" href="index.html">Profil</a></li>
+      <li class="nav-item"><a class="nav-link" href="VisiMisi.html">Visi&Misi</a></li>
+      <li class="nav-item"><a class="nav-link" href="Sejarah.html">Sejarah</a></li>
+      <li class="nav-item"><a class="nav-link" href="index.html">Jurusan</a></li>
+      <li class="nav-item"><a class="nav-link" href="index.html">Ekstrakurikuler</a></li>
+      <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <!-- Step 1: Persyaratan -->
+  <div class="form-container" id="step1">
+    <img src="img/logosmkn7.svg" alt="Logo Sekolah" class="logo">
+    <div class="step-indicator">Step 1 dari 2</div>
+    <h2>FORMULIR PENDAFTARAN CALON <br> PESERTA DIDIK BARU</h2>
+    <p class="subtitle">TAHUN PELAJARAN 2025/2026</p>
+
+    <div class="requirements">
+      <h3>PERSYARATAN CALON PESERTA DIDIK BARU</h3>
+      <ol>
+        <li>Foto copy IJAZAH/US bagi lulusan SMP/MTS/Sederajat 2 (dua) lembar yang telah disahkan.</li>
+        <li>Foto copy Ijazah/Sertifikat TPA 2 lembar atau Surat Keterangan mampu baca tulis Al-Qur’an.</li>
+        <li>Pas foto ukuran 3x4 sebanyak 3 lembar.</li>
+        <li>Foto copy Akte Kelahiran 1 lembar.</li>
+      </ol>
+      <button class="btn" onclick="nextStep()">DAFTAR</button>
+    </div>
+  </div>
+
+  <!-- Step 2: Form Data Siswa -->
+  <div class="form-container" id="step2" style="display:none;">
+    <img src="img/logosmkn7.svg" alt="Logo Sekolah" class="logo">
+    <div class="step-indicator">Step 2 dari 2</div>
+    <h2>DATA CALON SISWA BARU</h2>
+    <p class="subtitle">SMKN 7 LUWU UTARA</p>
+
+    <form>
+      <label>Nama Lengkap *</label>
+      <input type="text" required>
+
+      <label>Tempat Lahir *</label>
+      <input type="text" required>
+
+      <label>Tanggal Lahir *</label>
+      <input type="date" required>
+
+      <label>Jenis Kelamin *</label>
+      <select required>
+        <option value="">Pilih</option>
+        <option>Laki-Laki</option>
+        <option>Perempuan</option>
+      </select>
+
+      <label>Agama *</label>
+      <select required>
+        <option value="">Pilih</option>
+        <option>Islam</option>
+        <option>Kristen</option>
+        <option>Katholik</option>
+        <option>Hindu</option>
+        <option>Buddha</option>
+        <option>Konghucu</option>
+      </select>
+
+      <label>Nama Asal Sekolah *</label>
+      <input type="text" required>
+
+      <label>NISN *</label>
+      <input type="text" required>
+
+      <label>No. Ujian Sekolah *</label>
+      <input type="text" required>
+
+      <label>No. Kartu Keluarga *</label>
+      <input type="text" required>
+
+      <label>No. Induk Kependudukan (NIK) *</label>
+      <input type="text" required>
+
+      <div class="btn-group">
+        <button type="button" class="btn" onclick="prevStep()">Back</button>
+        <button type="submit" class="btn">Next</button>
+      </div>
+    </form>
+  </div>
+
+
+<!-- Bootstrap & JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/form.js"></script>
+  
+  <script src="js/Daftar.js"></script>
+</body>
+</html>
