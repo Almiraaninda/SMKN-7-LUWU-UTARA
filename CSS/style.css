@@ -1,10 +1,15 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: #b9c6d4;
 }
 
 .navbar-brand span {
   font-size: 26px;   /* bisa diganti sesuai kebutuhan */
   color: #fff;       /* biar kontras */
+}
+
+.navbar-nav {
+  margin-left: auto !important;
 }
 
 .navbar-nav .nav-link {
@@ -20,7 +25,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: black;
+      background: linear-gradient(90deg, #719bcc 0%, #8ca3d4 100%);
       color: white;
       overflow: hidden;
     }
@@ -63,11 +68,9 @@ body {
 }
 
 /* Warna tombol */
-.red { background: #e60000; }
-.green { background: #5c8a36; }
-.orange { background: #ff9933; }
-.blue { background: #0066cc; }
-.purple { background: #9933cc; }
+.red { background: #d39b9b; }
+.green { background: #6ad1d8; }
+.purple { background: #c189dd; }
 .lightgreen { 
   background: #99cc66; 
   color: white; 
@@ -90,6 +93,37 @@ body {
   transform: scale(0.95);
   box-shadow: inset 0 4px 8px rgba(0,0,0,0.4);
 }
+
+
+.visi-misi {
+  background-color: #d2b48c; /* coklat susu */
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 650px;   /* batasi lebar area visi-misi */
+  margin: 0 auto;     /* biar rata tengah */
+}
+
+.visi-misi .card {
+  background: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  max-width: 600px;   /* batasi lebar card */
+  width: 100%;
+}
+
+    .card h2 {
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 22px;
+    }
+
+    .card ol {
+        padding-left: 20px;
+        line-height: 1.6;
+    }
+
 
 
 .btn-daftar {
