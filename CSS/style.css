@@ -4,8 +4,8 @@ body {
 }
 
 .navbar-brand span {
-  font-size: 26px;   /* bisa diganti sesuai kebutuhan */
-  color: #fff;       /* biar kontras */
+  font-size: 26px;   
+  color: #fff;      
 }
 
 .navbar-nav {
@@ -13,11 +13,11 @@ body {
 }
 
 .navbar-nav .nav-link {
-  margin-left: 15px; /* kasih jarak antar menu */
+  margin-left: 15px; 
   font-weight: 500;
 }
 
-/* Hero Section */
+
 .hero-section {
       position: relative;
       height: 80vh;
